@@ -36,10 +36,13 @@ const decrement = () => {
 //コンソールに新しいstateを表示する。
 store.subscribe(() => console.log(store.getState()));
 
-//dispatchを使ってactionを実行する。
+//dispatchを使ってactionを実行する。ここで使われているdispatchは単純にactionを実行させるために必要なだけで、それ以上の意味は持たない。
 store.dispatch(incriment());
 store.dispatch(incriment());
-
+store.dispatch(decrement());
+store.dispatch(decrement());
+store.dispatch(incriment());
+store.dispatch(incriment());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
