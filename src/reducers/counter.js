@@ -1,4 +1,4 @@
-const counteReducer = (state = 0, action) => {
+const counterReducer = (state = 0, action) => {
   switch (action.type) {
     case 'INCREMENT':
       return state + 1
@@ -11,4 +11,4 @@ const counteReducer = (state = 0, action) => {
 //ここで書かれているものは、storeの中のreducerにどのような動きをして欲しいかを書いているだけ。
 //初期値を設定して、そのあとにaction.typeによってどのような動きをするかを書いている。
 
-export default counteReducer;
+export default counterReducer;
